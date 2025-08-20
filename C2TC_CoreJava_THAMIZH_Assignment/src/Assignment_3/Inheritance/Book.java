@@ -1,4 +1,4 @@
-package Assignment_3.Inheritance.Composition;
+package Assignment_3.Inheritance;
 
 public class Book extends Baseclass {
 	

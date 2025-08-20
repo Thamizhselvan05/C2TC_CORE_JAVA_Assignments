@@ -1,4 +1,6 @@
-package Assignment_3.Inheritance.Composition;
+package Assignment_3.Composition;
+
+import Assignment_3.Composition.Library;
 
 public class Mainclass {
 	
@@ -6,11 +8,7 @@ public class Mainclass {
         Book book = new Book(101, "Java Basics", "James Gosling");
         Magazine magazine = new Magazine(201, "Tech Today", 45);
         Library lib = new Library();
-        
-        
-        book.displayInfo();
-        magazine.displayInfo();
-        
+       
         
         lib.addBaseclass(book);
         lib.addMagazine(magazine);

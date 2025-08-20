@@ -1,4 +1,4 @@
-package Assignment_3.Inheritance.Composition;
+package Assignment_3.Composition;
 
 import java.util.ArrayList;
 import java.util.List;
