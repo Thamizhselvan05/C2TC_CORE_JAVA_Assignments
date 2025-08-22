@@ -1,4 +1,4 @@
-package Assignment_4_1;
+package Assignment_4.Assignment_4_1;
 
 public class TicketBooking {
     
