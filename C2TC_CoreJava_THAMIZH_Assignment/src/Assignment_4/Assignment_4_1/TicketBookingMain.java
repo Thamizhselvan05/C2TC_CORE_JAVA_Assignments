@@ -6,7 +6,7 @@ public class TicketBookingMain {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Details (Event, Name, Seats): ");
+        System.out.print("Enter Details (Event,Name,Seats): ");
         String csv = sc.nextLine();   
         String[] parts = csv.split(",");
         String stageEvent = parts[0].trim();
@@ -15,7 +15,7 @@ public class TicketBookingMain {
 
                 TicketBooking booking = new TicketBooking(stageEvent, customer, noOfSeats);
 
-        System.out.print("Enter Payment Mode: ");
+        System.out.print("Enter Payment Mode (1 :Amount ,2 :Digital card ,3 :Credit card : ");
         int mode = sc.nextInt();
 
        
@@ -27,7 +27,7 @@ public class TicketBookingMain {
                 break;
             }
             case 2: { 
-            	System.out.println("Enter Wallet Number");
+            	System.out.println("Enter Digital Wallet Number");
                 String walletNumber = sc.next();
             	System.out.println("Enter Amount: ");
                 double amount = sc.nextDouble();

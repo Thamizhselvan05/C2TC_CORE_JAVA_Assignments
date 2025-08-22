@@ -16,7 +16,6 @@ public class TicketBooking {
         this.noOfSeats = noOfSeats;
     }
 
-    // Getters
     public String getStageEvent() { return stageEvent; }
     public String getCustomer() { return customer; }
     public int getNoOfSeats() { return noOfSeats; }

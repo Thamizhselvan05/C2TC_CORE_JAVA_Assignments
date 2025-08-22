@@ -29,7 +29,7 @@ public class TicketBooking {
         System.out.printf("Amount %.1f paid in cash%n", amount);
     }
 
-    // 2) Wallet
+    
     public void makePayment(String walletNumber, Double amount) {
         System.out.println("Stage event: " + stageEvent);
         System.out.println("Customer: " + customer);
@@ -37,7 +37,7 @@ public class TicketBooking {
         System.out.printf("Amount %.1f paid using wallet number %s%n", amount, walletNumber);
     }
 
-    // 3) Credit card
+   
     public void makePayment(String creditCard, String ccv, String name, Double amount) {
         System.out.println("Stage event: " + stageEvent);
         System.out.println("Customer: " + customer);

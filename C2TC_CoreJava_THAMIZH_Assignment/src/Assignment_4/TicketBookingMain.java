@@ -7,7 +7,7 @@ public class TicketBookingMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // 1) Read CSV booking details
+   
         System.out.println("Enter booking details as: stageEvent, customer, noOfSeats");
         String csv = sc.nextLine().trim(); // e.g. RockConcert, John, 2
 
@@ -37,7 +37,7 @@ public class TicketBookingMain {
 
         TicketBooking booking = new TicketBooking(stageEvent, customer, noOfSeats);
 
-        // 2) Mode
+ 
         System.out.println("Enter payment mode: 1 (Cash), 2 (Wallet), 3 (Credit Card)");
         if (!sc.hasNextInt()) {
             System.out.println("Invalid mode.");
@@ -45,7 +45,7 @@ public class TicketBookingMain {
             return;
         }
         int mode = sc.nextInt();
-        sc.nextLine(); // consume leftover newline
+        sc.nextLine(); 
 
         switch (mode) {
             case 1: {
@@ -70,7 +70,7 @@ public class TicketBookingMain {
                 break;
             }
             case 3: {
-                // Read in a robust, user-friendly way
+                
                 System.out.println("Enter credit card number and CCV (same line):");
                 String firstLine = sc.nextLine().trim();
                 while (firstLine.isEmpty()) firstLine = sc.nextLine().trim();
